@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 10px;
+  }
+  
+  :root{
+    --base: black
+  }
+  
+  h3{
+    color: var(--base);
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .lead {
+    color: color-mix(in oklab, var(--base) 50%, pink);
+    text-align: center;
+  }
+
+  p{
+    color: var(--base);
+  }
