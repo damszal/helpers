@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 10px;
+  }
+  
+  :root{
+    --bgColor: #fff3e6;
+    --fontColor: black;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bgColor: #212121;
+      --fontColor:#cfcfcf;;
+    }
+  }
+  
+  html{
+    color-scheme: dark light
+  }
+  
+  :root:has(#title-selector [value="light"]:checked){
+    --bgColor: #fff3e6;
+    --fontColor: black;
+  }
+  
+  :root:has(#title-selector [value="dark"]:checked){
+    --bgColor: #212121;
+    --fontColor:#cfcfcf;;
+  }
+  
+  body{
+    background-color: var(--bgColor);
+    color: var(--fontColor);
+  }
+  
+  
+  h3{
+    color: var(--base);
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  
+  
